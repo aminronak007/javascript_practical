@@ -5,6 +5,8 @@ function timeConversion(s) {
 
   if (isPM && hour !== 12) {
     hour += 12;
+  } else {
+    hour = 0;
   }
   timeArray[0] = hour.toString().padStart(2, "0");
 
