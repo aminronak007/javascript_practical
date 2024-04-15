@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button id="clickMe">Click Me</button>
+  </body>
+  <script>
+    function addEventListener() {
+      let count = 0;
+      document.getElementById("clickMe").addEventListener("click", () => {
+        console.log("Button Click", ++count);
+      });
+    }
+
+    addEventListener();
+  </script>
+</html>

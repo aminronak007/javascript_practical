@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+  <title>Event Delegation</title>
+  <style></style>
+</head>
+<html>
+  <body>
+    <div>
+      <ul id="category">
+        <li id="laptops">Laptops</li>
+        <li id="mobiles">Mobiles</li>
+        <li id="cameras">Cameras</li>
+        <li id="tablets">Tablets</li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    document.querySelector("#category").addEventListener("click", (e) => {
+      if (e.target.tagName === "LI") {
+        window.location.href = `/${e.target.id}`;
+      }
+    });
+  </script>
+</html>
