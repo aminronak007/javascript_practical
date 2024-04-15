@@ -12,6 +12,7 @@ function gradingStudents(grades) {
       }
     }
   }
+
   return roundedGrades;
 }
 
